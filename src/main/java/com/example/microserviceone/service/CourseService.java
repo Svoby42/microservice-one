@@ -1,0 +1,13 @@
+package com.example.microserviceone.service;
+
+import com.example.microserviceone.model.Course;
+
+import java.util.List;
+
+public interface CourseService {
+    Course saveCourse(Course course);
+
+    void deleteCourse(Long courseId);
+
+    List<Course> findAllCourses();
+}
